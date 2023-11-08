@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./aws-sdk.min.js"></script>
+    <script src="./leaderboard.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <audio id="beep">
+    <source src="./beep.wav" type="audio/ogg" />
+  </audio>
+
+  <body>
+    <div class="heading">
+      <p>Score: <span class="score"></span></p>
+      <p>Time left: <span class="timer"></span></p>
+    </div>
+
+    <div class="holes">
+      <div class="hole hole1"></div>
+      <div class="hole hole2"></div>
+      <div class="hole hole3"></div>
+      <div class="hole hole4"></div>
+      <div class="hole hole5"></div>
+      <div class="hole hole6"></div>
+      <div class="hole hole7"></div>
+      <div class="hole hole8"></div>
+      <div class="hole hole9"></div>
+    </div>
+
+    <div class="button">
+      <button class="play">Play</button>
+    </div>
+    <input id="name" placeholder="Enter your username" />
+    <div class="leaderboard"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>
