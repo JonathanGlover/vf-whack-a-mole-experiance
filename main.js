@@ -60,7 +60,6 @@ playBtn.addEventListener("click", () => {
     const randomPhoto = getRandomSrc();
     moleImg.setAttribute("src", `./${randomPhoto}`);
     moleImg.setAttribute("class", "mole");
-    beep.play();
     currHole.appendChild(moleImg);
     let timeout = Math.floor(Math.random() * 200) + interval / 2;
     setTimeout(() => {
@@ -72,6 +71,7 @@ playBtn.addEventListener("click", () => {
     event.preventDefault();
     if (event.target === currHole) {
       currScore += 1;
+      beep.play();
       score.innerHTML = currScore;
     }
   };
